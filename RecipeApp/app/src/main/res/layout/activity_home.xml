@@ -132,7 +132,7 @@
                 android:id="@+id/salad"
                 style="@style/my_style"
                 android:background="@drawable/category_card_bc"
-                app:srcCompat="@drawable/category_salad" />
+                app:srcCompat="@drawable/category_salad1" />
 
             <TextView
                 android:id="@+id/textView6"

@@ -1,8 +1,10 @@
 package com.jyotismita.recipeapp
 
+import androidx.room.Dao
 import androidx.room.Query
-
+@Dao
 interface Dao {
-    @get:Query("SELECT * FROM recipe")
-    var all:List<Recipe?>?
+    @Query("SELECT * FROM recipe")
+    fun getAll():List<Recipe?>?
+
 }
