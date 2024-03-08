@@ -1,5 +1,6 @@
 package com.jyotismita.recipeapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,6 +17,9 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setUpRecyclerview()
+        binding.search.setOnClickListener{
+            startActivity(Intent(this, SearchActivity::class.java))
+        }
     }
 
     private fun setUpRecyclerview(){
@@ -29,7 +33,7 @@ class HomeActivity : AppCompatActivity() {
         var daoObject= db.getDao()
         var recipes=daoObject.getAll()
         for(i in recipes!!.indices){
-            if(recipes[i]!!.category.contains("popular")){
+            if(recipes[i]!!.category.contains("Popular")){
                 dataList.add(recipes[i]!!)
             }
             rvAdapter=PopularAdapter(dataList, this)
