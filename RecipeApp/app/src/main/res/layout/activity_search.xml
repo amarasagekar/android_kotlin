@@ -8,7 +8,7 @@
     tools:context=".SearchActivity">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/search"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginStart="20dp"
@@ -28,16 +28,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/go_back_home"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:src="@android:drawable/btn_plus"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="5dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:layout_constraintStart_toStartOf="@+id/search"
+        app:layout_constraintTop_toTopOf="@+id/search" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/search_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
