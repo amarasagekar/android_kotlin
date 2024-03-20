@@ -151,7 +151,7 @@
                 android:textSize="17sp" />
 
             <ImageView
-                android:id="@+id/MainDish"
+                android:id="@+id/mainDish"
                 style="@style/my_style"
                 android:background="@drawable/category_card_bc"
                 app:srcCompat="@drawable/drinks"
@@ -163,9 +163,9 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/MainDish"
-                android:layout_alignStart="@id/MainDish"
-                android:layout_alignEnd="@id/MainDish"
+                android:layout_below="@id/mainDish"
+                android:layout_alignStart="@id/mainDish"
+                android:layout_alignEnd="@id/mainDish"
                 android:layout_marginStart="17dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginEnd="19dp"
@@ -177,21 +177,21 @@
                 android:textSize="17sp" />
 
             <ImageView
-                android:id="@+id/Drinks"
+                android:id="@+id/drinks"
                 style="@style/my_style"
                 android:background="@drawable/category_card_bc"
                 app:srcCompat="@drawable/catergory_drinks"
                 android:layout_marginStart="17dp"
-                android:layout_toEndOf="@id/MainDish"
+                android:layout_toEndOf="@id/mainDish"
                 />
 
             <TextView
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/Drinks"
-                android:layout_alignStart="@id/Drinks"
-                android:layout_alignEnd="@id/Drinks"
+                android:layout_below="@id/drinks"
+                android:layout_alignStart="@id/drinks"
+                android:layout_alignEnd="@id/drinks"
                 android:layout_marginStart="17dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginEnd="19dp"
@@ -204,21 +204,21 @@
                 android:textSize="17sp" />
 
             <ImageView
-                android:id="@+id/Desserts"
+                android:id="@+id/desserts"
                 style="@style/my_style"
                 android:background="@drawable/category_card_bc"
                 app:srcCompat="@drawable/category_dessert"
                 android:layout_marginStart="17dp"
-                android:layout_toEndOf="@id/Drinks"
+                android:layout_toEndOf="@id/drinks"
                 />
 
             <TextView
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/Desserts"
-                android:layout_alignStart="@id/Desserts"
-                android:layout_alignEnd="@id/Desserts"
+                android:layout_below="@id/desserts"
+                android:layout_alignStart="@id/desserts"
+                android:layout_alignEnd="@id/desserts"
                 android:layout_marginStart="1dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginEnd="1dp"
